@@ -1,0 +1,322 @@
+/* checkout, cart popup */
+
+.exin-wrapper {
+    background-image: url('/wp-content/themes/porto-child/img/pop-up-animation-checkout.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    direction: rtl;
+    height: 438px;
+    width: 400px;
+    margin: 0 auto;
+    @include phone {
+        height: 270px;
+        width: 250px;
+    }
+    .exin-top-wrapper {
+        text-align: center;
+        color: #000000;
+        padding: 170px 0 55px 0;
+        @include phone{
+           width: 100%;
+            padding: 112px 0 30px 0;
+        }
+
+        .exin-text1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-left: 21px;
+            @include phone {
+                font-size: 16px;
+                margin-left: 18px;
+            }
+        }
+
+    }
+
+    .exin-middle-wrapper {
+        text-align: center;
+        color: #ffffff;
+        @include phone{
+           width: 100%; 
+        }
+        .exin-text2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-left: 44px;
+            @include phone {
+                font-size: 16px;
+                margin-left: 30px;
+            }
+        }
+    }
+
+
+    .exin-bottom-info {
+        text-align: center;
+        padding-top: 70px;
+        @include phone{
+           width: 100%;
+            padding-top: 39px;
+        }
+        .exin-button {
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            @include phone {
+                padding: 5px 25px;
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+/*remove border */
+
+.pum-content.popmake-content:focus-visible,
+.pum-content *:focus,
+.pum-overlay .pum-content
+{
+    outline: none !important;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .pum-overlay .pum-content {
+            outline: none !important;
+        }
+    }
+}
+
+/* button close */
+
+.pum-theme-100485 .pum-content + .pum-close, .pum-theme-content-only .pum-content + .pum-close {
+    height: 30px;
+    width: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 26px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    @media screen and (max-width: 768px) {
+        top: -40px;
+    }
+}
+
+/* home popup */
+
+.home-popup-step1 {
+    height: 100px;
+    background-color: #ea0d53;
+    border: 0px none rgb(41, 43, 44);
+    width: 100px;
+    border-radius: 100px;
+    text-align: center;
+    display: block;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 24px 3px;
+    cursor: pointer;
+    .home-popup-step1-text {
+            left: 12px;
+            top: 10px;
+            height: 52px;
+            min-height: 20px;
+            width: 75px;
+            cursor: pointer;
+            position: absolute;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 600;
+    }
+}
+
+#pum-317199 {
+    background-color: unset !important;
+    .pum-content + .pum-close {
+        background-color: #ffffff;
+        top: 0;
+        right: 0;
+        color: #000000;
+    }
+}
+
+.home-popup-step2 {
+    border-radius: 20px;
+    background-image: url('/wp-content/themes/porto-child/img/popup-step2.png');
+    background-size: cover;
+    @media screen and (max-width:360px) {
+        background-image: url('/wp-content/themes/porto-child/img/360x410-mobile-step2.png');
+        background-size: 100%;
+    }
+    @media screen and (min-width:361px) and (max-width:480px) {
+        background-image: url('/wp-content/themes/porto-child/img/popup-mobile-step2.png');
+        background-size: 100%;
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        background-image: url('/wp-content/themes/porto-child/img/popup-mobile-step2.png');
+        background-size: cover;
+    }
+    background-repeat: no-repeat;
+    max-height: 473px;
+    max-width: 682px;
+    @media screen and (min-width:769px) {
+        height: 473px;
+        width: 682px;
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        height: 473px;
+        width: 480px;
+    }
+    .wpcf7 {
+        padding: 20px 80px;
+        @media screen and (max-width:768px) {
+            padding: 20px 20px;
+        }
+        .form-title {
+            color: #ea0d53;
+            text-align: center;
+            font-size: 26px;
+            background-color: white;
+            margin: 55px auto 19px;
+            font-weight: 700;
+            border-radius: 10px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            -webkit-box-shadow: 4px 4px 8px -2px #000000;
+            box-shadow: 4px 4px 8px -2px #000000;
+            @media screen and (max-width:480px) {
+                font-size: 16px;
+                margin: 42px auto 7px;
+            }
+            @media screen and (min-width:481px) and (max-width:768px) {
+                font-size: 21px;
+            }
+        }
+        .custom-font-family {
+            color: #ffffff;
+        }
+        .form-input {
+            text-align: center;
+            padding: 14px 15px;
+            @media screen and (max-width:480px) {
+                padding: 10px 10px;
+            }
+            width: 78%;
+            margin: auto;
+            border: 1px dashed #ffffff;
+            border-radius: 10px;
+            .input-text {
+                width: 100%;
+                line-height: 1.9;
+                font-size: 18px;
+                border-radius: 10px;
+                direction: rtl;
+                -webkit-box-shadow: 4px 4px 8px -2px #000000;
+                box-shadow: 4px 4px 8px -2px #000000;
+                @media screen and (max-width:480px) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .input-email, .input-tel {
+            margin-top: 12px;
+            @media screen and (max-width:480px) {
+                margin-top: 7px;
+            }
+        }
+        .form-submit {
+            margin: auto;
+            text-align: center;
+            margin-top: 15px;
+            @media screen and (max-width:480px) {
+                margin-top: 7px;
+            }
+            .btn-submit {
+                background-color: #ea0d53;
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: 700;
+                -webkit-box-shadow: 4px 4px 8px -2px #000000;
+                box-shadow: 4px 4px 8px -2px #000000;
+            }
+        }
+    }
+    .wpcf7-response-output {
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.home-popup-step3 {
+    border-radius: 20px;
+    background-image: url('/wp-content/themes/porto-child/img/popup-step3.png');
+    background-size: cover;
+    @media screen and (max-width:768px) {
+        background-image: url('/wp-content/themes/porto-child/img/popup-mobile-step3.png');
+        background-size: cover;
+    }
+    background-repeat: no-repeat;
+    max-height: 473px;
+    max-width: 682px;
+    @media screen and (min-width:769px) {
+        height: 473px;
+        width: 682px;
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        height: 473px;
+        width: 480px;
+    }
+    .step3-text, .step3-text2 {
+        font-size: 40px;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 600;
+        @media screen and (max-width:768px) {
+            font-size: 35px;
+        }
+    }
+    .step3-text {
+        padding: 120px 80px 10px;
+        @media screen and (max-width:480px) {
+            padding: 40px 20px 10px;
+        }
+        @media screen and (min-width:481px) and (max-width:768px) {
+            padding: 90px 20px 10px;
+        }
+    }
+    .step3-text2 {
+        padding: 10px 80px 20px;
+    }
+    .step3-button {
+        text-align: center;
+        padding: 14px 15px;
+        @media screen and (max-width:480px) {
+            padding: 10px 10px;
+        }
+        width: 78%;
+        margin: auto;
+        border: 1px dashed #ffffff;
+        border-radius: 10px;
+        .button-text {
+            width: 100%;
+            line-height: 1.9;
+            border-radius: 10px;
+            -webkit-box-shadow: 4px 4px 8px -2px #000000;
+            box-shadow: 4px 4px 8px -2px #000000;
+            @media screen and (max-width:480px) {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            background-color: #ea0d53;
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+    .step3-bottom {
+        @media screen and (max-width:480px) {
+            padding-bottom: 30px;
+        }
+    }
+}

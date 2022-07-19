@@ -1,0 +1,120 @@
+.exin-wrapper {
+    background-image: url('/wp-content/themes/porto-child/img/pop-up-animat.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    direction: ltr;
+    height: 548px;
+    width: 500px;
+    margin: 0 auto;
+    @include phone {
+        height: 270px;
+        width: 250px;
+    }
+    .exin-undertop-wrapper {
+        text-align: center;
+        color: #000000;
+        padding: 297px 0 77px 0;
+        @include phone{
+            width: 100%;
+            padding: 146px 0 30px 0;
+        }
+
+        .exin-text1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-left: 21px;
+            @include phone {
+                font-size: 16px;
+                margin-left: 18px;
+            }
+        }
+
+    }
+    .exin-top-wrapper {
+        text-align: center;
+        color: #ffffff;
+        padding: 297px 0 77px 0;
+        @include phone{
+           width: 100%;
+            padding: 146px 0 30px 0;
+        }
+
+        .exin-text1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-left: 21px;
+            @include phone {
+                font-size: 16px;
+                margin-left: 18px;
+            }
+        }
+
+    }
+
+    .exin-middle-wrapper {
+        text-align: center;
+        color: #ffffff;
+        @include phone{
+           width: 100%; 
+        }
+        .exin-text2 {
+            font-size: 21px;
+            font-weight: 600;
+            margin-left: 20px;
+            @include phone {
+                font-size: 16px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+
+    .exin-bottom-info {
+        text-align: center;
+        padding-top: 60px;
+        @include phone{
+           width: 100%;
+            padding-top: 25px;
+        }
+        .exin-button {
+            background: linear-gradient(#ef1052,#f77310);
+            color: #ffffff;
+            padding: 10px 30px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            @include phone {
+                padding: 5px 25px;
+            }
+        }
+    }
+}
+
+/*remove border */
+
+.pum-content.popmake-content:focus-visible,
+.pum-content *:focus,
+.pum-overlay .pum-content
+{
+    outline: none !important;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .pum-overlay .pum-content {
+            outline: none !important;
+        }
+    }
+}
+
+/* button close */
+
+.pum-theme-100485 .pum-content + .pum-close, .pum-theme-content-only .pum-content + .pum-close {
+    height: 30px;
+    width: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 26px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
